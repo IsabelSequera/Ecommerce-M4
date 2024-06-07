@@ -5,7 +5,7 @@ import React, { useState, useEffect} from "react";
 import { userSession } from "@/types";
 import { useRouter } from "next/navigation";
 
-const productDetails = ({params}: {params: {productId: string}}) => {
+const ProductDetails = ({params}: {params: {productId: string}}) => {
     const router = useRouter();
     const [productData, setProductData] = useState<IProduct>()
     const [dataUser, setDataUser] = useState<userSession>();
@@ -65,4 +65,4 @@ const productDetails = ({params}: {params: {productId: string}}) => {
     )
 }
 
-export default productDetails;
+export default ProductDetails;

@@ -5,7 +5,7 @@ import { IOrder, userSession } from "@/types";
 import { getOrders } from "@/helpers/orders";
 import Link from "next/link";
 
-const pageOrders = () => {
+const PageOrders = () => {
 
     const [dataUser, setDataUser] = useState<userSession>();
     const [ordersData, setOrdersData] = useState<IOrder[]>([]);
@@ -60,7 +60,7 @@ const pageOrders = () => {
     
 };
 
-export default pageOrders;
+export default PageOrders;
 
 
 
